@@ -25,40 +25,13 @@ I work at the intersection of **alternative data** and **financial risk modeling
 </div>
 
 ## Recent Publications
+---
+layout: single
+title: "About"
+permalink: /about/
+---
 
-<div class="publication-entry" markdown="1">
-### Telescoping Loans from Space: A Remote Sensing Analysis
-*Accepted: 45th International Symposium on Forecasting; 2025 MRS International Risk Conference; 2025 ISAFE China Conference*
+<meta http-equiv="refresh" content="0; url=/" />
 
-Built end-to-end pipeline; integrated remote sensing climate features with loan data; engineered repeatable experiments.
-</div>
-
-<div class="publication-entry" markdown="1">
+If your browser does not automatically redirect, <a href="/">click here</a>.
 ### Evaluating the Development Level of Digital Economies
-*EDMI 2024 (6th International Conference on Economic Development and Management Innovation)*
-
-Designed 1–4–17 indicator system; applied AHP + TOPSIS for 31 provincial regions (2022).
-</div>
-
-## Recent Projects
-
-<div class="project-entry" markdown="1">
-### Research on Reinforcement Learning and Investor Behaviour
-**Core Researcher** *(Jun 2025 – present)*
-
-Exploring how RL frameworks capture investor behavioral patterns and market regimes in practical settings.
-</div>
-
-<div class="project-entry" markdown="1">
-### Source-Aware and Trustworthy Alignment LLMs
-**PI / Project Lead** *(provincial innovation program)*
-
-Build source-aware benchmarks and accountable evaluation for LLMs in financial tasks; representation-level analyses and controlled studies.
-</div>
-
-## Selected Awards
-
-- 🏆 **Grand Prize** (National), SAS National Data Analysis Competition
-- 🥇 **First Prize** (Provincial), China Undergraduate Mathematical Contest in Modeling
-- 🥈 **Second Prize** (National), National English Competition for College Students
-- ⭐ **Top 5** nationwide (Special Prize), SAS China University Data Analysis Competition (AUC up to 0.94)
