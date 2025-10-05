@@ -437,3 +437,67 @@ html.mm-theme--dark .page__content .education-entry h3 span,
 body.mm-theme--dark .page__content .education-entry h3 span {
   color: #dfe6ea;
 }
+
+/* FORCE: dark-mode inline links and emphasized text inside page content */
+html.mm-theme--dark .page__content a,
+html[data-theme="dark"] .page__content a,
+body.mm-theme--dark .page__content a,
+body[data-theme="dark"] .page__content a,
+body.dark .page__content a {
+  color: #9ec3ff; /* visible, desaturated blue for links */
+}
+
+html.mm-theme--dark .page__content a:hover,
+html[data-theme="dark"] .page__content a:hover,
+body.mm-theme--dark .page__content a:hover,
+body[data-theme="dark"] .page__content a:hover,
+body.dark .page__content a:hover {
+  color: #cfe6ff;
+}
+
+/* Ensure emphasized/strong text in content is readable and not blue */
+html.mm-theme--dark .page__content em,
+html.mm-theme--dark .page__content strong,
+html[data-theme="dark"] .page__content em,
+html[data-theme="dark"] .page__content strong,
+body.mm-theme--dark .page__content em,
+body.mm-theme--dark .page__content strong,
+body[data-theme="dark"] .page__content em,
+body[data-theme="dark"] .page__content strong,
+body.dark .page__content em,
+body.dark .page__content strong {
+  color: #e6eef6;
+}
+
+/* Apply chosen fonts to masthead (nav) and sidebar */
+/* Headings font (Josefin Sans) for masthead brand and author name */
+.masthead,
+.masthead__menu,
+.masthead__menu a,
+.masthead__menu .masthead__menu-item {
+  font-family: 'Josefin Sans', 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.author__name,
+.sidebar .author__name {
+  font-family: 'Josefin Sans', 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Body font (Lato) for sidebar text and links */
+.sidebar,
+.author__bio,
+.author__urls a,
+.masthead__menu .masthead__menu-item a {
+  font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Slight size tweak to keep masthead legible */
+.masthead__menu a {
+  font-size: 1rem;
+}
+
+/* Mobile: ensure fonts wrap correctly */
+@media (max-width: 980px) {
+  .masthead__menu a { font-size: 0.98rem; }
+  .sidebar { font-size: 0.95rem; }
+}
