@@ -382,3 +382,58 @@ body.dark .project-entry {
   border: 1px solid rgba(255,255,255,0.04);
   box-shadow: none;
 }
+
+/* Stronger dark-mode overrides for remaining blue text inside content cards */
+html.mm-theme--dark .page__content .education-entry h3,
+html[data-theme="dark"] .page__content .education-entry h3,
+body.mm-theme--dark .page__content .education-entry h3,
+body[data-theme="dark"] .page__content .education-entry h3,
+body.dark .page__content .education-entry h3,
+html.mm-theme--dark .page__content .publication-entry h3,
+html[data-theme="dark"] .page__content .publication-entry h3,
+body.mm-theme--dark .page__content .publication-entry h3,
+body[data-theme="dark"] .page__content .publication-entry h3,
+body.dark .page__content .publication-entry h3,
+html.mm-theme--dark .page__content .project-entry h3,
+html[data-theme="dark"] .page__content .project-entry h3,
+body.mm-theme--dark .page__content .project-entry h3,
+body[data-theme="dark"] .page__content .project-entry h3,
+body.dark .page__content .project-entry h3 {
+  color: #dfe6ea; /* neutral, readable heading color in cards */
+}
+
+/* Links and emphasized text inside cards */
+html.mm-theme--dark .page__content .education-entry a,
+html[data-theme="dark"] .page__content .education-entry a,
+body.mm-theme--dark .page__content .education-entry a,
+body[data-theme="dark"] .page__content .education-entry a,
+body.dark .page__content .education-entry a,
+html.mm-theme--dark .page__content .publication-entry a,
+html[data-theme="dark"] .page__content .publication-entry a,
+body.mm-theme--dark .page__content .publication-entry a,
+body[data-theme="dark"] .page__content .publication-entry a,
+body.dark .page__content .publication-entry a,
+html.mm-theme--dark .page__content .project-entry a,
+html[data-theme="dark"] .page__content .project-entry a,
+body.mm-theme--dark .page__content .project-entry a,
+body[data-theme="dark"] .page__content .project-entry a,
+body.dark .page__content .project-entry a {
+  color: #cfe6ff; /* keep links visible but less saturated */
+}
+
+/* Emphasis and strong inside cards */
+html.mm-theme--dark .page__content .education-entry strong,
+html[data-theme="dark"] .page__content .education-entry strong,
+body.mm-theme--dark .page__content .education-entry strong,
+body[data-theme="dark"] .page__content .education-entry strong,
+body.dark .page__content .education-entry strong {
+  color: #e6eef6;
+}
+
+/* Specific: university link lines where the blue persisted */
+html.mm-theme--dark .page__content .education-entry h3 a,
+body.mm-theme--dark .page__content .education-entry h3 a,
+html.mm-theme--dark .page__content .education-entry h3 span,
+body.mm-theme--dark .page__content .education-entry h3 span {
+  color: #dfe6ea;
+}
