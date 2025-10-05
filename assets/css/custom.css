@@ -240,3 +240,102 @@ ul li {
         font-size: 0.95em;
     }
 }
+
+/* Dark-mode contrast and card styling */
+/* The site toggles themes via JS; the root html class remains `no-js js` — theme-toggle uses an icon. Minimal Mistakes often toggles a `mm-theme--dark` or similar; we'll target common patterns and fall back to data-theme="dark" */
+
+html.mm-theme--dark .page__content,
+html[data-theme="dark"] .page__content,
+body.mm-theme--dark .page__content,
+body[data-theme="dark"] .page__content {
+  color: #d9dbe0; /* lighter gray for readable body text */
+}
+
+html.mm-theme--dark p,
+html[data-theme="dark"] p,
+body.mm-theme--dark p,
+body[data-theme="dark"] p,
+html.mm-theme--dark li,
+html[data-theme="dark"] li,
+body.mm-theme--dark li,
+body[data-theme="dark"] li {
+  color: #cfd3d8; /* slightly lighter body text for paragraphs and lists */
+}
+
+/* Headings in dark mode: keep slightly brighter */
+html.mm-theme--dark h1,
+html[data-theme="dark"] h1,
+body.mm-theme--dark h1,
+body[data-theme="dark"] h1,
+html.mm-theme--dark h2,
+html[data-theme="dark"] h2,
+body.mm-theme--dark h2,
+body[data-theme="dark"] h2 {
+  color: #e6eef6;
+}
+
+/* Links contrast */
+html.mm-theme--dark a,
+html[data-theme="dark"] a,
+body.mm-theme--dark a,
+body[data-theme="dark"] a {
+  color: #9eceff;
+}
+
+/* Card / entry background: reduce brightness and shadow in dark mode */
+html.mm-theme--dark .education-entry,
+html[data-theme="dark"] .education-entry,
+body.mm-theme--dark .education-entry,
+body[data-theme="dark"] .education-entry,
+html.mm-theme--dark .publication-entry,
+html[data-theme="dark"] .publication-entry,
+body.mm-theme--dark .publication-entry,
+body[data-theme="dark"] .publication-entry,
+html.mm-theme--dark .project-entry,
+html[data-theme="dark"] .project-entry,
+body.mm-theme--dark .project-entry,
+body[data-theme="dark"] .project-entry {
+  background: rgba(255,255,255,0.03); /* very subtle light over dark */
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: none;
+}
+
+/* If a specific card looks too 'blocky', slightly reduce padding and soften its left accent */
+html.mm-theme--dark .education-entry,
+html[data-theme="dark"] .education-entry {
+  padding: 20px 22px;
+}
+html.mm-theme--dark .education-entry:before,
+html[data-theme="dark"] .education-entry:before {
+  background-color: rgba(158,206,255,0.18); /* softer accent */
+}
+
+/* Sidebar intro and links color in dark mode */
+html.mm-theme--dark .author__bio,
+html[data-theme="dark"] .author__bio,
+body.mm-theme--dark .author__bio,
+body[data-theme="dark"] .author__bio {
+  color: #c7cbd0;
+}
+
+/* Ensure footer and meta text are readable */
+html.mm-theme--dark .page__footer,
+html[data-theme="dark"] .page__footer,
+body.mm-theme--dark .page__footer,
+body[data-theme="dark"] .page__footer {
+  color: #bfc4c8;
+}
+
+/* Fallback: if theme-toggle simply toggles a .dark class on body */
+body.dark .page__content,
+body.dark p,
+body.dark li {
+  color: #d9dbe0;
+}
+body.dark .education-entry,
+body.dark .publication-entry,
+body.dark .project-entry {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: none;
+}
