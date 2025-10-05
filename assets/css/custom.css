@@ -326,6 +326,49 @@ body[data-theme="dark"] .page__footer {
   color: #bfc4c8;
 }
 
+/* Ensure special-font elements (titles, masthead links, entry titles) are readable in dark mode */
+html.mm-theme--dark .page__title,
+html[data-theme="dark"] .page__title,
+body.mm-theme--dark .page__title,
+body[data-theme="dark"] .page__title,
+body.dark .page__title {
+  color: #e8f0fa; /* brightened heading color */
+}
+
+html.mm-theme--dark .entry-title,
+html[data-theme="dark"] .entry-title,
+body.mm-theme--dark .entry-title,
+body[data-theme="dark"] .entry-title,
+body.dark .entry-title {
+  color: #cfe6ff;
+}
+
+html.mm-theme--dark .author__name,
+html[data-theme="dark"] .author__name,
+body.mm-theme--dark .author__name,
+body[data-theme="dark"] .author__name,
+body.dark .author__name {
+  color: #cfe6ff;
+}
+
+/* Masthead nav links (ensure they contrast against dark header) */
+html.mm-theme--dark .masthead__menu a,
+html[data-theme="dark"] .masthead__menu a,
+body.mm-theme--dark .masthead__menu a,
+body[data-theme="dark"] .masthead__menu a,
+body.dark .masthead__menu a {
+  color: #d9e9ff;
+}
+
+/* Subtle hover state for nav links */
+html.mm-theme--dark .masthead__menu a:hover,
+html[data-theme="dark"] .masthead__menu a:hover,
+body.mm-theme--dark .masthead__menu a:hover,
+body[data-theme="dark"] .masthead__menu a:hover,
+body.dark .masthead__menu a:hover {
+  color: #ffffff;
+}
+
 /* Fallback: if theme-toggle simply toggles a .dark class on body */
 body.dark .page__content,
 body.dark p,
