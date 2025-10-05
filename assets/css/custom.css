@@ -501,3 +501,51 @@ body.dark .page__content strong {
   .masthead__menu a { font-size: 0.98rem; }
   .sidebar { font-size: 0.95rem; }
 }
+
+/* Extra high-specificity dark-mode overrides to neutralize any remaining blue inline/emphasized text */
+html.mm-theme--dark body .page__content a,
+html.mm-theme--dark .page__content a,
+html[data-theme="dark"] .page__content a,
+body.mm-theme--dark .page__content a,
+body[data-theme="dark"] .page__content a,
+body.dark .page__content a,
+.page__content p a,
+.page__content li a,
+.page__content h3 a,
+.page__content .entry-title a,
+.page__content .education-entry h3 a,
+.page__content .publication-entry h3 a,
+.page__content .project-entry h3 a {
+  color: #dfe6ea; /* neutral, desaturated light color */
+  text-decoration-color: rgba(223,230,234,0.35);
+}
+
+/* Links inside strong/em should inherit a readable color (covers <strong><a> and <em><a>) */
+html.mm-theme--dark .page__content strong a,
+html.mm-theme--dark .page__content em a,
+body.mm-theme--dark .page__content strong a,
+body.mm-theme--dark .page__content em a,
+body.dark .page__content strong a,
+body.dark .page__content em a {
+  color: #e6eef6;
+}
+
+/* Sidebar, author links and masthead links in dark mode */
+html.mm-theme--dark .sidebar a,
+html[data-theme="dark"] .sidebar a,
+body.mm-theme--dark .sidebar a,
+body[data-theme="dark"] .sidebar a,
+body.dark .sidebar a,
+html.mm-theme--dark .masthead__menu a,
+body.mm-theme--dark .masthead__menu a,
+body.dark .masthead__menu a {
+  color: #d9e9ff;
+}
+
+/* Ensure any leftover inline colored spans are neutralized inside content */
+html.mm-theme--dark .page__content span[style],
+body.mm-theme--dark .page__content span[style],
+html[data-theme="dark"] .page__content span[style] {
+  color: inherit;
+}
+
