@@ -1,4 +1,13 @@
 ---
+title: About
+permalink: /about/
+layout: single
+---
+
+<meta http-equiv="refresh" content="0; url=/" />
+
+If you are not redirected automatically, follow this <a href="/">link to the landing page</a>.
+---
 layout: single
 title: "Hi, I'm Yanlin (Leo)."
 permalink: /about/
